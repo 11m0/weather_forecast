@@ -14,15 +14,9 @@
 - постфактум расчёт MAE и RMSE;
 - график фактической температуры и прогноза.
 
-## Скриншоты
-
-### Веб-интерфейс
+## Скриншот
 
 ![Веб-интерфейс WeatherML](docs/screenshots/interface.png)
-
-### Документация API
-
-![Swagger UI](docs/screenshots/swagger.png)
 
 ## Источник данных
 
