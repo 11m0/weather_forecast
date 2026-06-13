@@ -1,0 +1,11 @@
+# Python
+__pycache__/
+*.pyc
+
+# IDE
+.idea/
+
+# Local environment and generated artifacts
+venv/
+data/
+models/

@@ -1,0 +1,22 @@
+services:
+  backend:
+    build: .
+    container_name: weather_backend
+    ports:
+      - "8020:8000"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    environment:
+      AUTOMATION_ENABLED: "true"
+      AUTOMATION_INTERVAL_SECONDS: "86400"
+      AUTOMATION_RETRAIN_ENABLED: "false"
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: weather_frontend
+    ports:
+      - "8080:80"
+    depends_on:
+      - backend
